@@ -1,0 +1,27 @@
+{
+  "name": "ws-server",
+  "version": "0.1.0",
+  "description": "WebSocket Server for Book-Shows App.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm run build && pnpm run start",
+    "build": "tsc -b",
+    "start": "node dist/server.js"
+  },
+  "keywords": [
+    "book-shows",
+    "book-my-show",
+    "book-my-show-api"
+  ],
+  "author": "deephiwase",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "jsonwebtoken": "^9.0.2",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/ws": "^8.18.1"
+  }
+}
